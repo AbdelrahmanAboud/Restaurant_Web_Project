@@ -1,0 +1,277 @@
+/*-----------------------------------*\
+  #RESET
+\*-----------------------------------*/
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+li {
+  list-style: none;
+}
+
+a,
+img,
+data,
+span,
+input,
+button,
+select,
+ion-icon,
+textarea {
+  display: block;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+img {
+  height: auto;
+}
+
+input,
+button,
+select,
+textarea {
+  background: none;
+  border: none;
+  font: inherit;
+}
+
+input,
+select,
+textarea {
+  width: 100%;
+  outline: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+address {
+  font-style: normal;
+}
+
+html {
+  font-size: 10px;
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: var(--eerie-black-1);
+  color: var(--white);
+  font-family: var(--fontFamily-dm_sans);
+  font-size: var(--fontSize-body-4);
+  font-weight: var(--weight-regular);
+  line-height: var(--lineHeight-5);
+  overflow: hidden;
+  height: 300vh;
+}
+
+body.loaded {
+  overflow: overlay;
+}
+
+body.nav-active {
+  overflow: hidden;
+}
+
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: var(--gold-crayola);
+}
+
+/* Theme toggling styles */
+body.dark-theme {
+  background-color: #181818;
+  color: #f5f5f5;
+}
+body.dark-theme .topbar {
+  background: #232323;
+  color: #f5f5f5;
+}
+body.dark-theme .topbar .icon ion-icon,
+body.dark-theme .topbar .span,
+body.dark-theme .topbar a,
+body.dark-theme .topbar address {
+  color: #f5f5f5 !important;
+}
+body.dark-theme .menu-search-bar input {
+  background: #232323;
+  color: #f5f5f5;
+  border: 1px solid #444;
+}
+body.dark-theme .menu-search-bar button {
+  background: #444;
+  color: #f5f5f5;
+  border: 1px solid #666;
+}
+body.dark-theme .menu-search-bar input::placeholder {
+  color: #aaa;
+}
+body.dark-theme #themeToggleBtn {
+  color: #f5f5f5;
+}
+
+body.light-theme {
+  background-color: #fff;
+  color: #222;
+}
+
+body.light-theme .topbar {
+  background: #fff !important;
+  color: #222 !important;
+}
+body.light-theme .topbar .icon ion-icon,
+body.light-theme .topbar .span,
+body.light-theme .topbar a,
+body.light-theme .topbar address {
+  color: #222 !important;
+}
+body.light-theme .menu-search-bar input {
+  background: #fff;
+  color: #222;
+  border: 1px solid #ccc;
+}
+body.light-theme .menu-search-bar button {
+  background: #c59d5f;
+  color: #fff;
+  border: 1px solid #c59d5f;
+}
+body.light-theme .menu-search-bar input::placeholder {
+  color: #888;
+}
+body.light-theme #themeToggleBtn {
+  color: #222;
+}
+body.light-theme .navbar {
+  color: #ffffff !important;
+}
+body.light-theme .navbar .navbar-link,
+body.light-theme .navbar .navbar-link .span,
+body.light-theme .navbar .navbar-item,
+body.light-theme .navbar .logo,
+body.light-theme .navbar .close-btn,
+body.light-theme .navbar .sidebar-link,
+body.light-theme .navbar address,
+body.light-theme .navbar .navbar-title,
+body.light-theme .navbar .contact-number {
+  color: #ffffff !important;
+}
+body.light-theme .navbar .navbar-link:hover,
+body.light-theme .navbar .navbar-link.active,
+body.light-theme .navbar .close-btn:hover,
+body.light-theme .navbar .close-btn:focus-visible {
+  color: #c59d5f !important;
+}
+body.light-theme,
+body.light-theme main,
+body.light-theme .section,
+body.light-theme .topbar,
+body.light-theme .footer,
+body.light-theme .special-dish-content,
+body.light-theme .reservation-form,
+body.light-theme .features,
+body.light-theme .service,
+body.light-theme .menu,
+body.light-theme .about,
+body.light-theme .testi,
+body.light-theme .event {
+  background: #fff !important;
+  background-color: #fff !important;
+  color: #181818 !important;
+}
+body.light-theme h1,
+body.light-theme h2,
+body.light-theme h3,
+body.light-theme h4,
+body.light-theme h5,
+body.light-theme h6,
+body.light-theme p,
+body.light-theme a,
+body.light-theme span,
+body.light-theme label,
+body.light-theme .label-1,
+body.light-theme .label-2,
+body.light-theme .headline-1,
+body.light-theme .headline-2,
+body.light-theme .section-title {
+  color: #111 !important;
+}
+
+body.light-theme .body-2.hero-text.slider-reveal,
+body.light-theme .label-2.section-subtitle.slider-reveal,
+body.light-theme .display-1.hero-title.slider-reveal,
+body.light-theme .text.text-1 {
+  color: #fff !important;
+}
+body.light-theme .btn.btn-primary.text.text-1 {
+  color: #000 !important;
+}
+
+body.light-theme .footer-brand.has-before.has-after,
+body.light-theme .footer-brand.has-before.has-after p,
+body.light-theme .footer-brand.has-before.has-after a,
+body.light-theme .footer-brand.has-before.has-after span {
+  color: #ffffff !important;
+}
+body.light-theme .event,
+body.light-theme .event p,
+body.light-theme .event h2,
+body.light-theme .event h3,
+body.light-theme .event time,
+body.light-theme .event span,
+body.light-theme .event a {
+  color: white !important;
+}
+body.light-theme .features,
+body.light-theme .features p,
+body.light-theme .features h2,
+body.light-theme .features h3,
+body.light-theme .features li,
+body.light-theme .features span,
+body.light-theme .features a {
+  color: white !important;
+}
+body.light-theme .event .section-subtitle,
+body.light-theme .features .section-subtitle,
+body.light-theme .about-content .btn.btn-primary .text,
+body.light-theme .special-dish-content .btn.btn-primary .text,
+body.light-theme .menu .btn.btn-primary .text {
+  color: black !important;
+}
+body.light-theme .event .btn.btn-primary .text,
+body.light-theme .event .btn.btn-primary {
+  color: black !important;
+}
+body.light-theme .btn.btn-secondary:hover .text-1,
+body.light-theme .btn.btn-secondary:hover .text-2 {
+  color: white !important;
+}
+body.light-theme .input-field,
+body.light-theme textarea.input-field {
+  background-color: #fff !important;
+  color: #111 !important;
+  border: 1px solid #ccc;
+}
+body.light-theme .input-field::placeholder,
+body.light-theme textarea.input-field::placeholder {
+  color: #888 !important;
+}
+body.light-theme .btn.btn-secondary:hover .text.text-1 {
+  color: #fff !important;
+}
